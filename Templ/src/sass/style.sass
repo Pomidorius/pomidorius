@@ -1,0 +1,439 @@
+$bas-col: #EC1B2E
+* 
+    font-family: "Circe", "Arial", sans-serif
+header
+    height: 180px
+    padding: 20px 0 20px 0
+.header
+    height: 40px
+    display: flex
+    justify-content: space-between
+    &_title
+        font-family: 'Circe'
+        font-style: normal
+        font-weight: 700
+        font-size: 13px
+        text-transform: uppercase
+        line-height: 19.6px
+        color: $bas-col
+    &_btn
+        margin-left: auto
+        width: 143px
+        height: 40px
+        background: $bas-col
+        display: flex
+        justify-content: center
+        align-items: center
+        a
+            font-family: 'Circe'
+            font-style: normal
+            font-weight: 700
+            font-size: 14px
+            color: #ffffff
+            text-decoration: none
+    &_line
+        display: block
+        margin: 20px 0
+.feedback
+    height: 40px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 600px
+    margin: 0 auto
+    &_item
+        &_img
+            margin-right: 20px
+        &_link
+            text-decoration: none
+            color: #333333
+            font-family: 'Circe'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+.subtract
+    height: 60px
+    .nav
+        height: 60px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        &:hover 
+            animation: hover_link
+            animation-duration: 1s
+            animation-timing-function: ease-in-out
+        &_link
+            font-family: 'Circe'
+            font-style: normal
+            font-weight: 700
+            font-size: 13px
+            text-decoration: none
+            color: #333333
+            text-transform: uppercase
+            &:hover 
+                animation: hover_link
+                animation-duration: 1s
+                animation-timing-function: ease-in-out
+                animation-direction: reverse
+                animation-fill-mode: both
+@keyframes hover_link
+    0%
+        color: black
+    100%
+        color: $bas-col
+                    
+@media ( max-width: 1400px  )
+    .header
+        &_title
+            font-size: 12px
+@media (max-width: 1200px)
+    .feedback
+        display: none
+    .subtract
+        nav
+            .nav_link
+                font-size: 10px
+@media ( max-width: 1000px  )
+    .subtract
+        .nav
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100vh
+            padding: 20px
+            background: rgba(0, 0, 0, 0.8)
+            &_link
+                color: #ffffff
+                margin-top: 15px
+        .active_nav
+            left: 0
+@media (max-width:600px)
+    .header_btn
+        display: none
+.details
+    height: 700px
+    background: url(../img/bg/Details_bg.jpg) center (center/cover) no-repeat
+    padding: 10% 0 10% 20%
+    &_item
+        width: 586px
+        height: 310px
+        background: rgba(51, 51, 51, 0.5)
+        font-family: 'Circe'
+        font-style: normal
+        font-weight: 800
+        font-size: 40px
+        line-height: 56px
+        color: #ffffff
+        text-transform: uppercase
+        padding: 15px 30px
+    &_btn
+        width: 163px
+        height: 58px
+        background: #EC1B2E
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 50px
+        font-family: 'Circe'
+        font-style: normal
+        font-weight: 700
+        font-size: 20px
+        color: #ffffff
+.school
+    &_content
+        width: 1118px
+        display: flex
+        padding: 191px 0 150px 0
+        margin: 0 auto
+        &_descr
+            width: 638px
+            height: 455px
+            border: 10px solid #EC1B2E
+            margin-right: 150px
+            padding: 0 90px 76px 90px
+            &_header
+                width: 414px
+                height: 87px
+                padding: 10px 30px
+                background: white
+                font-family: 'Circe'
+                font-style: normal
+                font-weight: 800
+                font-size: 45px
+                transform: translatey(-50%)
+            &_par
+                font-family: 'Circe'
+                font-style: normal
+                font-weight: 400
+                font-size: 18px
+                line-height: 25.2px
+        &_logo
+            opacity: 0.2
+            display: block
+            margin-top: 40px
+.learning
+    &_header
+        font-family: 'Circe'
+        font-style: normal
+        font-weight: 800
+        font-size: 48px
+        text-align: center
+    &_btn
+        margin-top: 52px
+        width: 175px
+        height: 68px
+        background: #EC1B2E
+        display: flex
+        align-items: center
+        text-align: center
+        a
+            text-decoration: none
+            color: #ffffff
+        a:hover
+            text-decoration: none
+            color: #333333
+    &_links
+        margin-top: 30px
+        display: flex
+        flex-direction: row
+        a
+            color: #333333
+            margin-right: 24px 
+            display: block
+            width: 306px
+            height: 68px
+            text-align: center
+            font-family: 'Circe'
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            line-height: 33.6px
+        a:hover 
+            text-decoration: none
+            color: #EC1B2E
+    &_border
+        margin-top: 100px
+        tr
+            border-bottom: 1px solid rgba(51, 51, 51, 0.05)
+        th
+            font-family: 'Circe'
+            font-style: normal
+            font-weight: 700
+            font-size: 20px
+        td 
+            vertical-align: top
+            margin-top: 30px
+            font-family: 'Circe'
+            font-style: normal
+            font-weight: 400
+            font-size: 18px
+            line-height: 25.2px
+        .st_th
+            width: 180px
+            height: 48px
+            background: rgba(51, 51, 51, 0.05)
+            padding: 10px 60px 10px 20px
+        .nd_th
+            width: 300px
+            height: 48px
+            background: rgba(51, 51, 51, 0.05)
+            padding: 10px 79px 10px 20px
+        .rd_th
+            width: 596px
+            height: 48px
+            background: rgba(51, 51, 51, 0.05)
+            padding: 10px 0px 10px 20px
+        .st_td
+            width: 160px
+            height: 105px
+            padding: 40px 20px 40px 20px 
+        .nd_td
+            width: 300px
+            height: 128px
+            padding: 30px 20px 30px 20px 
+        .rd_td
+            width: 596px
+            height: 196px
+            padding: 30px 20px 30px 20px
+            &_span
+                background: #EC1B2E
+                width: 84px
+                height: 33px
+                display: block
+                display: flex
+                justify-content: center
+                align-items: center
+                color: white
+.exams
+    min-height: 1000px
+    padding: 150px 0 0 0 
+    &_wrapper
+        display: flex
+        justify-content: space-around
+        margin-top: 100px
+    &_header
+        font-family: 'Circe'
+        font-weight: 800
+        font-size: 48px
+        text-align: center
+    &_item
+        width: 306px
+        &_descr
+            padding: 30px 20px 45px 20px
+            &_header
+                font-family: 'Circe'
+                font-weight: 700
+                font-size: 24px
+                line-height: 33.6px
+                text-align: center
+            &_order
+                padding-left: 30px
+                font-family: 'Circe'
+                font-weight: 400
+                font-size: 16px
+                line-height: 22.4px
+                li
+                    margin-top: 20px
+.btn_more
+    background: #EC1B2E
+    padding: 15px 30px
+    width: 160px
+    height: 60px
+    font-family: 'Circe'
+    font-weight: 700
+    font-style: normal
+    font-size: 20px
+    color: #ffffff
+    border: none
+    display: block
+    margin: 0 auto
+.btn_align
+    margin: 0
+    margin-top: 30px
+.events
+    min-height: 800px
+    padding: 150px 0 0 0
+    &_header
+        font-family: 'Circe'
+        font-weight: 800
+        font-size: 48px
+        text-align: center
+    &_wrapper
+        display: flex
+        justify-content: space-around
+        margin-top: 100px
+        &_item
+            width: 416px
+            height: 539px
+            &_descr
+                padding: 30px 30px 0 30px
+                text-align: left
+                &_header
+                    font-family: 'Circe'
+                    font-weight: 700
+                    font-size: 24px
+                    line-height: 33.6px
+                &_txt
+                    font-family: 'Circe'
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 22.4px
+.news
+    min-height: 789px
+    padding: 150px 0 120px 0
+    .margin
+        margin-top: 79px
+    &_header
+        text-align: center
+        font-family: 'Circe'
+        font-style: normal        
+        font-weight: 800
+        font-size: 48px
+    &_wrapper
+        margin-top: 100px
+        display: flex
+        justify-content: space-between
+        &_item
+            width: 310px
+            height: 352px
+            &_header
+                font-family: 'Circe'
+                font-style: normal
+                font-weight: 700
+                font-size: 24px
+                line-height: 33.6px
+            &_descr
+                margin: 25px 0 35px 0
+                font-family: 'Circe'
+                font-style: normal
+                font-weight: 400
+                font-size: 16px
+                line-height: 22.4px
+.footer
+    min-height: 588px
+    padding: 60px 0 25px 0
+    background-color: rgba(51, 51, 51, 0.05)
+    &_hr
+        width: 100%
+        color: #333333 
+        margin: 60px 0 25px 0
+    &_descr_flex
+        display: flex
+        justify-content: space-between
+        &_par
+            font-family: 'Circe'
+            font-style: normal
+            font-weight: 400
+            font-size: 14px
+            color: #333333
+            opacity: 0.5
+.footer_wrapper
+    display: flex
+    justify-content: space-between
+    .feedback_item_mgn
+        margin: 20px 0 20px 0
+    &_item
+        width: 200px
+        &_locate
+            &_header
+                font-family: 'Circe'
+                font-style: normal
+                font-weight: 700
+                font-size: 14px
+                line-height: 19.6px
+                text-transform: uppercase
+            &_block
+                margin-top: 40px
+        &_wdh
+            width: 221px
+        &_social
+            margin-top: 40px
+            width: 180px
+            display: flex
+            justify-content: space-between
+        &_header
+            font-family: 'Circe'
+            font-style: normal
+            font-weight: 700
+            font-size: 20px
+            margin-bottom: 10px
+            &_mgn-top
+                margin-top: 40px
+        ul
+            list-style-type: none
+            padding: 0
+            li
+                margin-top: 15px
+                font-family: 'Circe'
+                font-style: normal
+                font-weight: 400
+                font-size: 14px
+                line-height: 19.6px
+                a
+                    color: #333333
+                a:hover 
+                    text-decoration: none
